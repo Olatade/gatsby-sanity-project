@@ -23,7 +23,6 @@ async function turnPizzasIntoPages({ graphql, actions }) {
       // What is the URL for this new page??
       path: `pizza/${pizza.slug.current}`,
       component: pizzaTemplate,
-      // Pass data into the individual pages
       context: {
         slug: pizza.slug.current,
       },

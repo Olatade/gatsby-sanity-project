@@ -28,6 +28,7 @@ const PizzaStyles = styled.div`
 function SinglePizza({ pizza }) {
   return (
     <PizzaStyles>
+      {/* This link goes to a page that has been created in gatsby node */}
       <Link to={`/pizza/${pizza.slug.current}`}>
         <h2>
           <span className="mark">{pizza.name}</span>
